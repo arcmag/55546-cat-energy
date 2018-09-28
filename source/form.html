@@ -4,7 +4,114 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
-  <body>
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
+  <body class="form-page">
+    <div class="wrapper-page">
+      <header class="header-page">
+        <img class="site-logo" src="site-logo.svg">
+        <h1 class="main-title-site">Cat Energy</h1>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="content-page">
+        <section class="program">
+          <h2 class="program__title">Подбор программы</h2>
+          <div class="program_info">Заполните анкету и мы подберём программу питания для вашего кота</div>
+          <form class="program__form" method="post" action="https://echo.htmlacademy.ru">
+            <fieldset class="program__form__wrapper-data">
+              <p class="program__form__wrapper-field">
+                <label class="program__form__label" for="1">Имя:*</label>
+                <input class="program__form__value" id="1" type="text" value="Барсик">
+              </p>
+              <p class="program__form__wrapper-field">
+                <label class="program__form__label"  for="2">Вес (КГ):*</label>
+                <input class="program__form__value"  id="2" type="text" value="7">
+              </p>
+              <p class="program__form__wrapper-field">
+                <label class="program__form__label"  for="3">Возраст (лет):</label>
+                <input class="program__form__value"  id="3" type="text" value="7">
+              </p>
+            </fieldset>
+            <fieldset class="program__form__wrapper-data">
+              <p class="program__form__wrapper-field">
+                <input class="program__form__label" type="radio" id="4" name="r2">
+                <label class="program__form__value" for="4">Похудение</label>
+              </p>
+              <p class="program__form__wrapper-field">
+                <input class="program__form__label" type="radio" id="5" name="r2">
+                <label class="program__form__value" for="5">Набор массы</label>
+              </p>
+              <p class="program__form__wrapper-field">
+                <input class="program__form__label" type="radio" id="6" name="r2">
+                <label class="program__form__value" for="6">Не знаю (нужен ваш совет)</label>
+              </p>
+            </fieldset>
+            <fieldset class="program__form__wrapper-data">
+              <legend class="program__form__title">Контактные данные (владелец кота)</legend>
+              <p class="program__form__wrapper-field">
+                <label class="program__form__label" for="7">e-mail:*</label>
+                <input class="program__form__value" id="7" type="text" value="kuklachev@gmail.com">
+              </p>
+              <p class="program__form__wrapper-field">
+                <label class="program__form__label" for="8">Телефон:*</label>
+                <input class="program__form__value" id="8" type="text" value="8 (960) 900-60-90">
+              </p>
+            </fieldset>
+            <fieldset class="program__form__wrapper-data">
+              <legend class="program__form__title">Комментарий</legend>
+              <textarea class="program__form__comment">Расскажите обо всех повадках кота</textarea>
+            </fieldset>
+            <fieldset class="program__form__wrapper-data">
+              <legend class="program__form__title">Дополнительно</legend>
+              <p class="program__form__wrapper-field">
+                <input class="program__form__label" id="9" type="checkbox">
+                <label class="program__form__value" for="9">Сахарозаменитель</label>
+              </p>
+              <p class="program__form__wrapper-field">
+                <input class="program__form__label" id="9" type="checkbox">
+                <label class="program__form__value" for="9">Питьевая вода</label>
+              </p>
+              <p class="program__form__wrapper-field">
+                <input class="program__form__label" id="9" type="checkbox">
+                <label class="program__form__value" for="9">Молоко</label>
+              </p>
+              <p class="program__form__wrapper-field">
+                <input class="program__form__label" id="9" type="checkbox">
+                <label class="program__form__value" for="9">Витамины</label>
+              </p>
+            </fieldset>
+            <button class="program__form__btn">Отправить заявку</button>
+            <div class="program__form__note">* — Обязательные поля</div>
+          </form>
+        </section>
+      </main>
+      <footer class="footer-page contacts">
+        <div>
+          <div class="contacts__cooperation-title">Приглашаем к сотруднечеству дилеров!</div>
+          <address class="contacts__address">
+            ул. Большая Коношенная, д. 19/8 Санкт-Петербург
+          </address>
+        </div>
+        <div class="contacts__map">
+          <img src="http://placehold.it/320x360" width="320" height="360" alt="address map">
+        </div>
+        <div class="main-title-site">Cat Energy</div>
+        <ul class="contacts__socials">
+          <li><a class="contacts__socials__btn contacts__socials__btn--vk" href="#">vk</a></li>
+          <li><a class="contacts__socials__btn contacts__socials__btn--inst" href="#">instagram</a></li>
+          <li><a class="contacts__socials__btn contacts__socials__btn--fb" href="#">facebook</a></li>
+        </ul>
+        <div>
+          <div class="contacts__academy-title">HTML Academy</div>
+          <img class="contacts__academy-logo" src="http://placehold.it/28x35" width="28" height="35" alt="HTML Academy logo">
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
