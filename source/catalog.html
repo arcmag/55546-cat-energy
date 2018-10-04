@@ -3,20 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body class="catalog-page">
     <div class="wrapper-page">
       <header class="header-page">
-        <!-- <h1>Магазин кошачьего корма - Кэт энерджи</h1> -->
+        <h1 class="visually-hidden">Магазин кошачьего корма - Кэт энерджи</h1>
         <a class="header-page__link" href="index.html">
-          <img class="site-logo" src="site-logo.svg" alt="logo site">
-          <span class="main-title-site">Cat Energy</span>
+          <img class="site-logo" src="img/logo-mobile.svg" width="195" height="40" alt="logo site">
         </a>
         <nav class="main-nav">
           <ul class="main-nav__list">
-            <li><a class="main-nav__link" href="#">Главная</a></li>
-            <li><a class="main-nav__link" href="#">Каталог продукции</a></li>
-            <li><a class="main-nav__link" href="#">Подбор программы</a></li>
+            <li><a class="main-nav__link" href="index.html">Главная</a></li>
+            <li><a class="main-nav__link" href="catalog.html">Каталог продукции</a></li>
+            <li><a class="main-nav__link" href="form.html">Подбор программы</a></li>
           </ul>
         </nav>
       </header>
@@ -26,7 +26,7 @@
           <ul class="catalog__list">
             <li class="product-item">
               <div class="product-item__main-wrapper">
-                <a class="product-item__link" href="product.html">
+                <a class="product-item__wrapper-img" href="product.html">
                   <img class="product-item__img" src="http://placehold.it/140x145" width="140" height="145" alt="product-1">
                 </a>
                 <div class="product-item__sub-wrapper">
@@ -34,24 +34,24 @@
                   <ul class="product-item__list">
                     <li class="product-item__wrapper-data">
                       <span class="product-item__data-title">Объём</span>
-                      <span class="product-item__data-value">500г</span>
+                      <span class="product-item__data-value product-item__data-value--weight">500г</span>
                     </li>
                     <li class="product-item__wrapper-data">
                       <span class="product-item__data-title">Вкус</span>
-                      <span class="product-item__data-value">Курица</span>
+                      <span class="product-item__data-value product-item__data-value--taste">Курица</span>
                     </li>
                     <li class="product-item__wrapper-data">
                       <span class="product-item__data-title">Цена</span>
-                      <span class="product-item__data-value">700 р</span>
+                      <span class="product-item__data-value product-item__data-value--price">700 р.</span>
                     </li>
                   </ul>
                 </div>
               </div>
-              <a href="form.html" class="product-item__btn">Заказать</a>
+              <a href="form.html" class="button product-item__btn">Заказать</a>
             </li>
             <li class="product-item">
               <div class="product-item__main-wrapper">
-                <a class="product-item__link" href="product.html">
+                <a class="product-item__wrapper-img" href="product.html">
                   <img class="product-item__img" src="http://placehold.it/140x145" width="140" height="145" alt="product-1">
                 </a>
                 <div class="product-item__sub-wrapper">
@@ -59,24 +59,24 @@
                   <ul class="product-item__list">
                     <li class="product-item__wrapper-data">
                       <span class="product-item__data-title">Объём</span>
-                      <span class="product-item__data-value">1000 г</span>
+                      <span class="product-item__data-value product-item__data-value--weight">1000 г</span>
                     </li>
                     <li class="product-item__wrapper-data">
                       <span class="product-item__data-title">Вкус</span>
-                      <span class="product-item__data-value">Курица</span>
+                      <span class="product-item__data-value product-item__data-value--taste">Курица</span>
                     </li>
                     <li class="product-item__wrapper-data">
                       <span class="product-item__data-title">Цена</span>
-                      <span class="product-item__data-value">1000 р</span>
+                      <span class="product-item__data-value product-item__data-value--price">1000 р.</span>
                     </li>
                   </ul>
                 </div>
               </div>
-              <a href="form.html" class="product-item__btn">Заказать</a>
+              <a href="form.html" class="button product-item__btn">Заказать</a>
             </li>
             <li class="product-item">
               <div class="product-item__main-wrapper">
-                <a class="product-item__link" href="product.html">
+                <a class="product-item__wrapper-img" href="product.html">
                   <img class="product-item__img" src="http://placehold.it/140x145" width="140" height="145" alt="product-1">
                 </a>
                 <div class="product-item__sub-wrapper">
@@ -84,24 +84,24 @@
                   <ul class="product-item__list">
                     <li class="product-item__wrapper-data">
                       <span class="product-item__data-title">Объём</span>
-                      <span class="product-item__data-value">500 г</span>
+                      <span class="product-item__data-value product-item__data-value--weight">500 г</span>
                     </li>
                     <li class="product-item__wrapper-data">
                       <span class="product-item__data-title">Вкус</span>
-                      <span class="product-item__data-value">Рыба</span>
+                      <span class="product-item__data-value product-item__data-value--taste">Рыба</span>
                     </li>
                     <li class="product-item__wrapper-data">
                       <span class="product-item__data-title">Цена</span>
-                      <span class="product-item__data-value">700 р</span>
+                      <span class="product-item__data-value product-item__data-value--price">700 р.</span>
                     </li>
                   </ul>
                 </div>
               </div>
-              <a href="form.html" class="product-item__btn">Заказать</a>
+              <a href="form.html" class="button product-item__btn">Заказать</a>
             </li>
             <li class="product-item">
               <div class="product-item__main-wrapper">
-                <a class="product-item__link" href="product.html">
+                <a class="product-item__wrapper-img" href="product.html">
                   <img class="product-item__img" src="http://placehold.it/140x145" width="140" height="145" alt="product-1">
                 </a>
                 <div class="product-item__sub-wrapper">
@@ -109,24 +109,24 @@
                   <ul class="product-item__list">
                     <li class="product-item__wrapper-data">
                       <span class="product-item__data-title">Объём</span>
-                      <span class="product-item__data-value">1000 г</span>
+                      <span class="product-item__data-value product-item__data-value--weight">1000 г</span>
                     </li>
                     <li class="product-item__wrapper-data">
                       <span class="product-item__data-title">Вкус</span>
-                      <span class="product-item__data-value">Раба</span>
+                      <span class="product-item__data-value product-item__data-value--taste">Раба</span>
                     </li>
                     <li class="product-item__wrapper-data">
                       <span class="product-item__data-title">Цена</span>
-                      <span class="product-item__data-value">1000 р</span>
+                      <span class="product-item__data-value product-item__data-value--price">1000 р.</span>
                     </li>
                   </ul>
                 </div>
               </div>
-              <a href="form.html" class="product-item__btn">Заказать</a>
+              <a href="form.html" class="button product-item__btn">Заказать</a>
             </li>
             <li class="product-item">
               <div class="product-item__main-wrapper">
-                <a class="product-item__link" href="product.html">
+                <a class="product-item__wrapper-img" href="product.html">
                   <img class="product-item__img" src="http://placehold.it/140x145" width="140" height="145" alt="product-1">
                 </a>
                 <div class="product-item__sub-wrapper">
@@ -134,24 +134,24 @@
                   <ul class="product-item__list">
                     <li class="product-item__wrapper-data">
                       <span class="product-item__data-title">Объём</span>
-                      <span class="product-item__data-value">500 г</span>
+                      <span class="product-item__data-value product-item__data-value--weight">500 г</span>
                     </li>
                     <li class="product-item__wrapper-data">
                       <span class="product-item__data-title">Вкус</span>
-                      <span class="product-item__data-value">Гречка</span>
+                      <span class="product-item__data-value product-item__data-value--taste">Гречка</span>
                     </li>
                     <li class="product-item__wrapper-data">
                       <span class="product-item__data-title">Цена</span>
-                      <span class="product-item__data-value">400 р</span>
+                      <span class="product-item__data-value product-item__data-value--price">400 р.</span>
                     </li>
                   </ul>
                 </div>
               </div>
-              <a href="form.html" class="product-item__btn">Заказать</a>
+              <a href="form.html" class="button product-item__btn">Заказать</a>
             </li>
             <li class="product-item">
               <div class="product-item__main-wrapper">
-                <a class="product-item__link" href="product.html">
+                <a class="product-item__wrapper-img" href="product.html">
                   <img class="product-item__img" src="http://placehold.it/140x145" width="140" height="145" alt="product-1">
                 </a>
                 <div class="product-item__sub-wrapper">
@@ -159,24 +159,24 @@
                   <ul class="product-item__list">
                     <li class="product-item__wrapper-data">
                       <span class="product-item__data-title">Объём</span>
-                      <span class="product-item__data-value">1000 г</span>
+                      <span class="product-item__data-value product-item__data-value--weight">1000 г</span>
                     </li>
                     <li class="product-item__wrapper-data">
                       <span class="product-item__data-title">Вкус</span>
-                      <span class="product-item__data-value">Гречка</span>
+                      <span class="product-item__data-value product-item__data-value--taste">Гречка</span>
                     </li>
                     <li class="product-item__wrapper-data">
                       <span class="product-item__data-title">Цена</span>
-                      <span class="product-item__data-value">700 р</span>
+                      <span class="product-item__data-value product-item__data-value--price">700 р.</span>
                     </li>
                   </ul>
                 </div>
               </div>
-              <a href="form.html" class="product-item__btn">Заказать</a>
+              <a href="form.html" class="button product-item__btn">Заказать</a>
             </li>
             <li class="product-item">
               <div class="product-item__main-wrapper">
-                <a class="product-item__link" href="product.html">
+                <a class="product-item__wrapper-img" href="product.html">
                   <img class="product-item__img" src="http://placehold.it/140x145" width="140" height="145" alt="product-1">
                 </a>
                 <div class="product-item__sub-wrapper">
@@ -184,63 +184,63 @@
                   <ul class="product-item__list">
                     <li class="product-item__wrapper-data">
                       <span class="product-item__data-title">Объём</span>
-                      <span class="product-item__data-value">500 г</span>
+                      <span class="product-item__data-value product-item__data-value--weight">500 г</span>
                     </li>
                     <li class="product-item__wrapper-data">
                       <span class="product-item__data-title">Вкус</span>
-                      <span class="product-item__data-value">Рис</span>
+                      <span class="product-item__data-value product-item__data-value--taste">Рис</span>
                     </li>
                     <li class="product-item__wrapper-data">
                       <span class="product-item__data-title">Цена</span>
-                      <span class="product-item__data-value">500 р</span>
+                      <span class="product-item__data-value product-item__data-value--price">500 р.</span>
                     </li>
                   </ul>
                 </div>
               </div>
-              <a href="form.html" class="product-item__btn">Заказать</a>
+              <a href="form.html" class="button product-item__btn">Заказать</a>
             </li>
           </ul>
         </section>
         <div class="more-product">
-          <a href="#" class="more-product__btn">+</a>
+          <img class="more-product__img-plus" src="img/icon-plus-mobile.svg" width="30" height="30" alt="img plus">
           <p class="more-product__big">Показать ещё 100500 товаров</p>
           <p class="more-product__small">На самом деле вкусов гораздо больше!</p>
-          <a class="more-product__link" href="#">Показать все</a>
+          <a class="more-product__link button button--grey" href="#">Показать все</a>
         </div>
-        <section class="catalog">
+        <section class="additional-products catalog">
           <h2 class="catalog__title catalog__title--sub-title">Дополнительные товары</h2>
           <ul class="catalog__list">
             <li class="product-item">
-              <div class="product-item__title">Сахарозаменитель</div>
-              <div class="product-item__wrapper-data">
-                <span class="product-item__data-title">1 упаковка (100 г)</span>
-                <span class="product-item__data-value">100 р</span>
+              <p class="product-item__title">Сахарозаменитель</p>
+              <div class="product-item__wrapper-data additional-products__wrapper-data">
+                <span class="product-item__data-title additional-products__title">1 упаковка (100 г)</span>
+                <span class="product-item__data-value product-item__data-value--price">100 р.</span>
               </div>
-              <a href="form.html" class="product-item__btn">Заказать</a>
+              <a href="form.html" class="button product-item__btn">Заказать</a>
             </li>
             <li class="product-item">
-              <div class="product-item__title">Питьевая вода</div>
-              <div class="product-item__wrapper-data">
-                <span class="product-item__data-title">5 литров</span>
-                <span class="product-item__data-value">50 р</span>
+              <p class="product-item__title">Питьевая вода</p>
+              <div class="product-item__wrapper-data additional-products__wrapper-data">
+                <span class="product-item__data-title additional-products__title">5 литров</span>
+                <span class="product-item__data-value product-item__data-value--price">50 р.</span>
               </div>
-              <a href="form.html" class="product-item__btn">Заказать</a>
+              <a href="form.html" class="button product-item__btn">Заказать</a>
             </li>
             <li class="product-item">
-              <div class="product-item__title">Молоко</div>
-              <div class="product-item__wrapper-data">
-                <span class="product-item__data-title">1 литр</span>
-                <span class="product-item__data-value">100 р</span>
+              <p class="product-item__title">Молоко</p>
+              <div class="product-item__wrapper-data additional-products__wrapper-data">
+                <span class="product-item__data-title additional-products__title">1 литр</span>
+                <span class="product-item__data-value product-item__data-value--price">100 р.</span>
               </div>
-              <a href="form.html" class="product-item__btn">Заказать</a>
+              <a href="form.html" class="button product-item__btn">Заказать</a>
             </li>
             <li class="product-item">
-              <div class="product-item__title">Витамины</div>
-              <div class="product-item__wrapper-data">
-                <span class="product-item__data-title">1 упаковка (30 г)</span>
-                <span class="product-item__data-value">300 р</span>
+              <p class="product-item__title">Витамины</p>
+              <div class="product-item__wrapper-data additional-products__wrapper-data">
+                <span class="product-item__data-title additional-products__title">1 упаковка (30 г)</span>
+                <span class="product-item__data-value product-item__data-value--price">300 р.</span>
               </div>
-              <a href="form.html" class="product-item__btn">Заказать</a>
+              <a href="form.html" class="button product-item__btn">Заказать</a>
             </li>
           </ul>
         </section>
@@ -250,13 +250,13 @@
       </main>
       <footer class="footer-page">
         <div class="footer-page__cooperation-wrapper">
-          <div class="footer-page__cooperation-title">Приглашаем к сотруднечеству дилеров!</div>
+          <p class="footer-page__cooperation-title">Приглашаем к сотруднечеству дилеров!</p>
           <address class="footer-page__address">
             ул. Большая Коношенная, д. 19/8 Санкт-Петербург
           </address>
         </div>
         <div class="footer-page__map">
-          <img src="http://placehold.it/320x360" width="320" height="360" alt="address map">
+          <img src="img/bg-map-mobile@1x.png" width="320" height="400" alt="address map">
         </div>
         <a href="index.html" class="main-title-site">Cat Energy</a>
         <ul class="footer-page__socials">
@@ -266,7 +266,7 @@
         </ul>
         <a class="footer-page__academy-wrapper" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="footer-page__academy-title">HTML Academy</span>
-          <img class="footer-page__academy-logo" src="http://placehold.it/28x35" width="28" height="35" alt="HTML Academy logo">
+          <img class="footer-page__academy-logo" src="img/htmlacademy.svg" width="28" height="35" alt="HTML Academy logo">
         </a>
       </footer>
     </div>
