@@ -18,6 +18,10 @@
   border-bottom: solid 1px grey;
 }
 
+.additional-products__item:first-child{
+  border-top: solid 1px grey;
+}
+
 .additional-products__item-title {
   line-height: 16px;
   font-family: "Oswald", "Arial", sans-serif;
@@ -38,4 +42,71 @@
 
 .additional-products__data-value {
   text-transform: uppercase;
+}
+
+
+
+@media (min-width: @tablet-width) {
+  .additional-products__main-title {
+    display: flex;
+    padding: 0 0 80px 0;
+  }
+
+  .additional-products__item {
+    padding: 30px 40px;
+    border-bottom: solid 1px grey;
+  }
+
+  .additional-products__main-title::after,
+  .additional-products__main-title::before {
+    content: "";
+    height: 3px;
+    background: #68b738;
+    width: 30px;
+    margin: 14px 20px 0 0;
+  }
+
+  .additional-products__main-title::after {
+    flex-grow: 1;
+    width: 180px;
+    margin: 14px 0 0 20px;
+  }
+
+  .additional-products__wrapper-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .additional-products__wrapper-data {
+    margin: 0;
+    text-align: right;
+  }
+
+  .additional-products__data-value {
+    width: 95px;
+  }
+
+  .additional-products {
+    margin-bottom: 70px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additional-products {
+    flex-grow: 1;
+  }
+
+  .additional-products__item {
+    display: flex;
+    width: 895px;
+  }
+
+  .additional-products__wrapper-content {
+    width: 610px;
+  }
+
+  .additional-products__btn {
+    width: 245px;
+  }
 }

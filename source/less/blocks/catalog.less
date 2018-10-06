@@ -17,3 +17,25 @@
 .catalog__list {
   .list-reset;
 }
+
+
+@media (min-width: @tablet-width) {
+  .catalog {
+    width: @tablet-width;
+  }
+
+  .catalog__title {
+    border: 0;
+  }
+
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog {
+    width: @desktop-width;
+  }
+}
