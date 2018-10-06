@@ -1,17 +1,20 @@
 .header-content {
-  background: url("../img/index-can-mobile@1x.png") no-repeat 0 185px, url("../img/index-background-mobile@1x.jpg") no-repeat;
-  background-color: #65a93c;
+  background: url("../img/index-background-mobile@1x.jpg") no-repeat;
+  border-top: solid 1px #65a93c;
   min-height: 480px;
   color: #ffffff;
   font-family: "Oswald", "Arial", sans-serif;
   text-align: center;
-  margin-bottom: 20px;
+  margin: 0 auto 20px auto;
+  padding: 0 20px;
+  width: 320px;
 }
 
 .header-content__title {
   line-height: 36px;
   font-size: 36px;
   font-weight: normal;
+  margin: 30px 0 25px 0;
 }
 
 .header-content__text {
@@ -23,4 +26,69 @@
 .header-content__btn {
   font-size: 14px;
   line-height: 18px;
+}
+
+.header-content__img-tablet {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .header-content {
+    width: @tablet-width;
+    border: 0;
+    margin: 0 auto;
+    background: url("../img/index-can-tablet@1x.jpg") no-repeat 28px 205px;
+    color: #111111;
+    text-align: left;
+    padding-left: 120px;
+    min-height: 800px;
+  }
+
+  .header-content__title {
+    line-height: 60px;
+    font-size: 60px;
+    font-weight: normal;
+    width: 420px;
+    margin: 30px 0 45px 0;
+  }
+
+  .header-content__text {
+    line-height: 20px;
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+
+  .header-content__img {
+    display: none;
+  }
+
+  .header-content__img-tablet {
+    display: block;
+    margin-left: -90px;
+  }
+
+  .header-content__btn {
+    display: inline-block;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 15px 25px;
+    width: auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .header-content {
+    width: @desktop-width;
+    margin-top: -209px;
+    margin-bottom: 50px;
+    background: url("../img/index-can-desktop@1x.png") no-repeat, url("../img/index-background-desktop@1x.jpg") no-repeat;
+    background-position: 308px 105px, right 0 top 0;
+    padding-top: 225px;
+    padding-left: 190px;
+  }
+
+  .header-content__title {
+    margin: 0;
+    margin-bottom: 40px;
+  }
 }

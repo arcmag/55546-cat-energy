@@ -1,6 +1,8 @@
 .living-example {
   background: #f2f2f2;
-  padding-bottom: 40px;
+  margin: 0 auto;
+  padding: 0 20px 40px 20px;
+  width: 320px;
 }
 
 .living-example__title {
@@ -40,7 +42,6 @@
 .living-example__item-result-data {
   font-size: 12px;
   line-height: 12px;
-  background: #f2f2f2;
   width: 80%;
   margin: 0 auto -10px auto;
 }
@@ -57,6 +58,7 @@
 
 .living-example__img {
   margin: 0 auto 35px auto;
+  width: 100%;
 }
 
 .living-example__comparison {
@@ -70,4 +72,103 @@
   line-height: 20px;
   color: #111111;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .living-example {
+    width: @tablet-width;
+    padding: 0;
+    background: none;
+  }
+
+  .living-example__title {
+    font-size: 60px;
+    margin: 0;
+    padding: 50px 0 70px 30px;
+  }
+
+  .living-example__text {
+    margin: 0 60px 60px 30px;
+    width: 100%;
+  }
+
+  .living-example__wrapper-result {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    margin-bottom: 250px;
+    flex-wrap: wrap;
+  }
+
+  .living-example__result {
+    width: 370px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .living-example__item {
+    width: 162px;
+  }
+
+  .living-example__price {
+    margin-left: auto;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  .living-example__comparison {
+    background: #f2f2f2;
+    width: 100%;
+    min-height: 460px;
+    display: flex;
+  }
+
+  .living-example__toggler-wrapper {
+    margin: auto auto 70px auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .living-example {
+    width: @desktop-width;
+    background: #f2f2f2;
+    position: relative;
+    display: flex;
+    margin-bottom: 273px;
+  }
+
+  .living-example__title {
+    margin: 0;
+    top: -190px;
+    padding-left: 110px;
+    position: absolute;
+  }
+
+  .living-example__text {
+    padding: 0;
+    margin: 0 0 70px 0;
+    width: 450px;
+  }
+
+  .living-example__wrapper-result {
+    display: block;
+    margin: 0;
+    padding: 0;
+    padding-left: 110px;
+  }
+
+  .living-example__price {
+    text-align: left;
+  }
+
+  .living-example__comparison {
+    width: 50%;
+    min-height: 460px;
+    display: flex;
+  }
+
+  .living-example__toggler-wrapper {
+    margin: auto auto 70px auto;
+  }
 }
