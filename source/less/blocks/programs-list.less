@@ -1,9 +1,27 @@
 .programs-list {
   margin: 0 auto 30px auto;
   padding: 0 20px;
-  max-width: 320px;
+  width: 320px;
 }
 
 .programs-list__list {
   .list-reset;
+}
+
+@media (min-width: @tablet-width) {
+  .programs-list {
+    width: @tablet-width;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .programs-list {
+    width: @desktop-width;
+  }
+
+  .programs-list__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
 }
