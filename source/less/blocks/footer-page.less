@@ -12,6 +12,10 @@
   background: #f2f2f2;
 }
 
+.footer-page__cooperation-wrapper br {
+  display: none;
+}
+
 .footer-page__cooperation-title {
   font-family: "Oswald", "Arial", sans-serif;
   width: 50%;
@@ -105,11 +109,13 @@
 .footer-page__map-tablet {
   display: none;
   width: 100%;
+  height: 100%;
 }
 
 .footer-page__map-desktop {
   display: none;
   width: 100%;
+  height: 100%;
 }
 
 .footer-page__academy-wrapper {
@@ -133,16 +139,34 @@
   }
 
   .footer-page__cooperation-wrapper {
-    padding: 60px 70px;
+    padding: 38px 71px 32px 71px;
+    justify-content: space-between;
+  }
+
+  .footer-page__cooperation-wrapper br {
+    display: block;
   }
 
   .footer-page__cooperation-title {
     font-size: 20px;
     line-height: 25px;
+    padding-left: 0;
   }
 
   .footer-page__address {
     text-align: right;
+    font-size: 16px;
+    padding-top: 25px;
+    width: 180px;
+  }
+
+  .footer-page__address-city {
+    padding-top: 20px;
+    display: block;
+  }
+
+  .footer-page__map {
+    height: 395px;
   }
 
   .footer-page__map-mobile {
@@ -156,9 +180,13 @@
   .footer-page__links-wrapper {
     margin: 0;
     display: flex;
-    padding: 0 30px;
+    padding: 49px 30px;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .footer-page__link {
+    padding: 0;
   }
 
   .footer-page__logo {
@@ -170,6 +198,7 @@
     border: 0;
     padding: 0;
     margin: 0;
+    width: 130px;
   }
 }
 
