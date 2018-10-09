@@ -1,7 +1,7 @@
 .living-example {
   background: #f2f2f2;
   margin: 0 auto;
-  padding: 0 20px 40px 20px;
+  padding: 17px 20px 0 20px;
   width: 320px;
 }
 
@@ -10,7 +10,7 @@
   line-height: 60px;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: normal;
-  margin-bottom: 40px;
+  margin: 0 0 23px 0;
   color: #111111;
 }
 
@@ -22,16 +22,21 @@
   .list-reset;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 34px;
 }
 
 .living-example__item {
   width: 45%;
   text-align: center;
-  border: solid 1px grey;
+  border: solid 1px #cdcdcd;
   border-radius: 3px;
+  position: relative;
+  padding: 13px 0 17px 0;
 }
 
 .living-example__item-total-data {
+  padding: 0;
+  margin: 0;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 24px;
@@ -40,10 +45,13 @@
 }
 
 .living-example__item-result-data {
+  position: absolute;
   font-size: 12px;
   line-height: 12px;
-  width: 80%;
-  margin: 0 auto -10px auto;
+  width: 82px;
+  left: 19px;
+  background: #f2f2f2;
+  bottom: -28px;
 }
 
 .living-example__price {
@@ -63,7 +71,13 @@
 
 .living-example__comparison {
   width: 200px;
+  min-height: 317px;
   margin: 0 auto;
+  display: flex;
+}
+
+.living-example__toggler-wrapper {
+  margin: auto 0 37px 0;
 }
 
 .living-example__comparison-label {

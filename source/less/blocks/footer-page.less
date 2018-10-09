@@ -20,14 +20,14 @@
   color: #111111;
   text-transform: uppercase;
   margin: 0;
-  padding: 30px 20px;
+  padding: 28px 20px 26px 20px;
 }
 
 .footer-page__address {
   width: 50%;
   line-height: 20px;
   font-style: normal;
-  padding: 30px 0;
+  padding: 28px 0 26px 0;
 }
 
 .footer-page__links-wrapper {
@@ -36,8 +36,8 @@
 }
 
 .footer-page__logo {
-  width: 195px;
-  height: 40px;
+  width: 130px;
+  height: 25px;
 }
 
 .footer-page__academy-wrapper {
@@ -55,17 +55,51 @@
 .footer-page__link {
   display: block;
   text-align: center;
-  padding: 40px 0 30px 0;
+  padding: 37px 0 27px 0;
 }
 
 .footer-page__socials {
   .list-reset;
   display: flex;
-  justify-content: center;
-  padding: 25px 0;
-  border-bottom: solid 1px grey;
-  border-top: solid 1px grey;
-  margin-bottom: 20px;
+  justify-content: space-between;
+  padding: 22px 82px 18px 70px;
+  border-bottom: solid 1px #d9d9d9;
+  border-top: solid 1px #d9d9d9;
+  margin-bottom: 19px;
+  align-items: center;
+}
+
+.footer-page__social-btn {
+  font-size: 0;
+  display: block;
+  background: no-repeat center center;
+}
+
+.footer-page__social-btn--vk {
+  background-image: url("../img/icon-vk-mobile.svg");
+  width: 22px;
+  height: 22px;
+}
+
+.footer-page__social-btn--inst {
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/icon-insta-mobile.svg");
+}
+
+.footer-page__social-btn--fb {
+  width: 10px;
+  height: 20px;
+  background-image: url("../img/icon-fb-mobile.svg");
+}
+
+.footer-page__map {
+  height: 363px;
+}
+
+.footer-page__map-mobile {
+  width: 100%;
+  height: 100%;
 }
 
 .footer-page__map-tablet {
@@ -77,6 +111,19 @@
   display: none;
   width: 100%;
 }
+
+.footer-page__academy-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.footer-page__academy-logo {
+  width: 40px;
+  height: 40px;
+  margin-right: -7px;
+}
+
 
 @media (min-width: @tablet-width) {
   .footer-page {
