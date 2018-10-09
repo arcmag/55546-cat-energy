@@ -175,41 +175,62 @@
 
 @media (min-width: @desktop-width) {
   .living-example {
-    width: @desktop-width;
+    width: auto;
     background: #f2f2f2;
     position: relative;
-    display: flex;
-    margin-bottom: 273px;
+    padding-bottom: 67px;
   }
 
   .living-example__title {
-    margin: 0;
-    top: -190px;
-    padding-left: 110px;
-    position: absolute;
+    top: -136px;
+    position: relative;
+    width: 1220px;
+    margin: 0 auto 10px auto;
   }
 
   .living-example__text {
     padding: 0;
-    margin: 0 0 70px 0;
+    margin: 0 0 68px 0;
     width: 450px;
+  }
+
+  .living-example__wrapper-content {
+    width: 1220px;
+    margin: 0 auto;
+    position: relative;
   }
 
   .living-example__wrapper-result {
     display: block;
-    margin: 0;
     padding: 0;
-    padding-left: 110px;
+    margin-bottom: 0px;
+    width: 450px;
+  }
+
+  .living-example__result {
+    margin-bottom: 60px;
+  }
+
+  .living-example__item-result-data {
+    background: #f2f2f2;
   }
 
   .living-example__price {
+    margin: 0;
+    width: 327px;
     text-align: left;
+    display: flex;
+    justify-content: space-between;
   }
 
   .living-example__comparison {
-    width: 50%;
-    min-height: 460px;
+    width: 610px;
+    min-height: 590px;
     display: flex;
+    outline: solid 1px red;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
   }
 
   .living-example__toggler-wrapper {

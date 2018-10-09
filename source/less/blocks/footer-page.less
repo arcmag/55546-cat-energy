@@ -204,15 +204,17 @@
 
 @media (min-width: @desktop-width) {
   .footer-page {
-    width: @desktop-width;
     position: relative;
+    width: auto;
   }
 
   .footer-page__cooperation-wrapper {
+    width: @desktop-width;
+    margin: 0 auto;
     position: absolute;
-    left: 100px;
-    top: 90px;
-    padding: 70px 75px;
+    left: 111px;
+    top: 94px;
+    padding: 66px 75px 57px 75px;
     width: 570px;
     background: #ffffff;
   }
@@ -225,6 +227,10 @@
   .footer-page__address {
     padding: 0;
     margin: 0;
+    text-align: left;
+    width: 170px;
+    margin-top: -2px;
+
   }
 
   .footer-page__map-tablet {
