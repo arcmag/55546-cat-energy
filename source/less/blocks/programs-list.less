@@ -1,6 +1,6 @@
 .programs-list {
   margin: 0 auto 15px auto;
-  padding: 0 30px;
+  padding: 0 20px;
   width: 320px;
 }
 
@@ -8,10 +8,155 @@
   .list-reset;
 }
 
+.programs-list__item {
+  background: #f2f2f2;
+  padding: 30px 20px 0 20px;
+}
+
+.programs-list__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.programs-list__item-title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 37px;
+  color: #111111;
+  text-transform: uppercase;
+  margin: 0 0 30px 0;
+  padding-left: 72px;
+  position: relative;
+}
+
+.programs-list__item-title::before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: -5px;
+  width: 50px;
+  height: 50px;
+  background-color: #68b738;
+  border-radius: 50%;
+}
+
+.programs-list__item-title::after {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: -8px;
+  width: 50px;
+  height: 50px;
+}
+
+.programs-list__item--slim .programs-list__item-title::after {
+  background: url("../img/icon-cat-slim.svg") no-repeat center center;
+}
+
+.programs-list__item--fatten .programs-list__item-title::after {
+  left: -6px;
+  top: -8px;
+  width: 65px;
+  height: 56px;
+  background: url("../img/icon-cat-pro.svg") no-repeat center center;
+}
+
+.programs-list__item-description {
+  padding-bottom: 21px;
+  margin: 0;
+  border-bottom: solid 1px #d9d9d9;
+}
+
+.programs-list__item-link {
+  font-size: 16px;
+  line-height: 16px;
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #111111;
+  text-transform: uppercase;
+  padding: 20px 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.programs-list__item-link::after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  background: url("../img/icon-right-arrow-long.svg") no-repeat 0 0;
+  width: 25px;
+  height: 15px;
+  margin-left: 10px;
+}
+
+.programs-list__item-link:hover::after {
+  background: url("../img/icon-right-arrow-verylong.svg") no-repeat 0 0;
+}
+
+.programs-list__item-link:active {
+  opacity: 0.3;
+}
+
 @media (min-width: @tablet-width) {
   .programs-list {
     width: @tablet-width;
-    margin-bottom: 73px;
+    margin-bottom: 45px;
+    padding: 0 30px;
+  }
+
+  .programs-list__item {
+    padding: 76px 50px 60px 53px;
+    min-height: 372px;
+  }
+
+  .programs-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .programs-list__item-title {
+    padding: 0;
+    font-size: 36px;
+    color: #111111;
+    margin: 0 0 25px 0;
+  }
+
+  .programs-list__item-title::before {
+    left: 393px;
+    top: 16px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .programs-list__item-title::after {
+    left: 398px;
+    top: 3px;
+    width: 190px;
+    height: 195px;
+  }
+
+  .programs-list__item--fatten .programs-list__item-title::after {
+    left: 360px;
+    top: 14px;
+    width: 267px;
+    height: 200px;
+  }
+
+  .programs-list__item-description {
+    width: 375px;
+    border: 0;
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: -1px;
+    padding-bottom: 56px;
+  }
+
+  .programs-list__item--fatten .programs-list__item-description {
+    width: 344px;
+  }
+
+  .programs-list__item-link {
+    padding: 0;
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
@@ -19,10 +164,56 @@
   .programs-list {
     width: @desktop-width;
     padding: 0 40px;
+    margin-bottom: 73px;
   }
 
   .programs-list__list {
     display: flex;
     justify-content: space-between;
+  }
+
+  .programs-list__item {
+    width: 570px;
+  }
+
+  .programs-list__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .programs-list__item-title {
+    padding: 0 0 0 161px;
+    font-size: 36px;
+    color: #111111;
+    margin: 0 0 74px 0;
+  }
+
+  .programs-list__item-title::before {
+    left: 0;
+    top: -29px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .programs-list__item-title::after {
+    left: -1px;
+    top: -34px;
+    width: 98px;
+    height: 95px;
+  }
+
+  .programs-list__item--fatten .programs-list__item-title::after {
+    left: -22px;
+    top: -8px;
+    width: 140px;
+    height: 56px;
+  }
+
+  .programs-list__item-description {
+    width: auto;
+    padding-bottom: 32px;
+  }
+
+  .programs-list__item--fatten .programs-list__item-description {
+    width: auto;
   }
 }
