@@ -4,12 +4,41 @@
 }
 
 .program__form-wrapper-data {
-  padding: 20px;
+  padding: 20px 20px 9px 17px;
 }
 
-.program__form-wrapper-data:nth-child(1),
-.program__form-wrapper-data:nth-child(2) {
-  border-bottom: solid 1px grey;
+.program__form-wrapper-data--main,
+.program__form-wrapper-data--type {
+  border-bottom: solid 1px #ededed;
+}
+
+.program__form-wrapper-data--type {
+  padding: 16px 20px 11px 14px;
+}
+
+.program__form-wrapper-data--contacts {
+  margin-bottom: -23px;
+}
+
+.program__form-wrapper-data--comments {
+  margin-bottom: -11px;
+}
+
+.program__form-wrapper-data--additional {
+  padding: 17px 20px 11px 20px;
+  margin-bottom: 16px;
+}
+
+.program__form-wrapper-field {
+  padding: 0;
+}
+
+.program__form-wrapper-data--type .program__form-wrapper-field {
+  margin: 0 0 5px 0;
+}
+
+.program__form-wrapper-data--additional .program__form-wrapper-field {
+  margin: 0 0 4px 0;
 }
 
 .program__title {
@@ -18,8 +47,8 @@
   color: #111111;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: normal;
-  margin: 0;
-  padding: 30px 20px 35px 20px;
+  margin: 0 20px 25px 20px;
+  padding-top: 15px;
 }
 
 .program__sub-title {
@@ -28,7 +57,7 @@
   font-size: 24px;
   line-height: 24px;
   color: #111111;
-  margin: 30px 0 30px 20px;
+  margin: 28px 0 14px 20px;
 }
 
 .program__sub-title::after {
@@ -44,18 +73,25 @@
   color: #111111;
   font-family: "Oswald", "Arial", sans-serif;
   text-transform: uppercase;
-  margin: 0 0 40px 20px;
+  margin: 0 0 19px 20px;
+  width: 235px;
 }
 
 .program__form-comment {
   min-height: 150px;
 }
 
+.program__form-btn {
+  margin: 0 auto -0 auto;
+  padding: 10px 0;
+  width: 280px;
+}
+
 .program__note {
   text-align: center;
   font-family: "Arial", sans-serif;
   line-height: 16px;
-  margin: 25px 0 35px 0;
+  margin: 21px 0 32px 0;
 }
 
 
