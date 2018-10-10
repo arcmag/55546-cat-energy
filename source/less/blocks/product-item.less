@@ -1,7 +1,6 @@
 .product-item {
   padding: 25px 20px 24px 20px;
   border-bottom: solid 1px #ededed;
-  // background: #f2f2f2;
 }
 
 .product-item--other {
@@ -79,11 +78,14 @@
 
 @media (min-width: @tablet-width) {
   .product-item {
-    margin: 0 5% 60px 5%;
-    padding: 40px;
-    width: 40%;
+    padding: 162px 38px 40px 38px;
+    width: 325px;
     border: 0;
     text-align: center;
+    background: #f2f2f2;
+
+    min-height: 430px;
+    margin-top: 141px;
   }
 
   .product-item--other {
@@ -92,38 +94,63 @@
 
   .product-item__main-wrapper {
     display: block;
+    position: relative;
   }
 
   .product-item__wrapper-img,
   .product-item__sub-wrapper {
+    display: block;
+  }
+
+  .product-item__sub-wrapper {
     width: 100%;
+  }
+
+  .product-item__wrapper-img {
+    width: auto;
+    height: auto;
+    outline: solid 1px red;
+    position: absolute;
+    top: -200px;
+    left: 50px;
   }
 
   .product-item__title {
     text-align: center;
+    margin: 0 auto 19px auto;
+    width: 150px;
+    font-size: 20px;
+    line-height: 20px;
   }
 
   .product-item__wrapper-data {
-    border-bottom: solid 1px grey;
+    border-bottom: solid 1px #cdcdcd;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 8px 0 7px 0;
   }
 
   .product-item__list {
-    margin-bottom: 30px;
+    margin-bottom: 33px;
   }
 }
 
 
 @media (min-width: @desktop-width) {
   .product-item {
-    margin: 0 2.5% 60px 2.5%;
-    padding: 40px;
-    width: 20%;
+    padding: 162px 39px 40px 39px;
+    width: 245px;
     border: 0;
     text-align: center;
+
+    min-height: 431px;
+
+    margin-top: 139px;
+    margin-top: 142px;
   }
 
   .product-item--other {
-    border: solid 1px grey;
+    // border: solid 1px grey;
   }
 
   .product-item__main-wrapper {
@@ -137,13 +164,20 @@
 
   .product-item__title {
     text-align: center;
+    margin: 2px auto 19px auto;
   }
 
   .product-item__wrapper-data {
-    border-bottom: solid 1px grey;
+    // border-bottom: solid 1px grey;
   }
 
   .product-item__list {
-    margin-bottom: 30px;
+    margin-bottom: 32px;
   }
+  .product-item__wrapper-img {
+    top: auto;
+    bottom: 205px;
+    left: 2px;
+  }
+  // .product-item__wrapper-img img {display: none;}
 }

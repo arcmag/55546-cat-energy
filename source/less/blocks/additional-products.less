@@ -65,11 +65,18 @@
   .additional-products__main-title {
     display: flex;
     padding: 0 0 80px 0;
+    line-height: 36px;
+    font-size: 36px;
+  }
+
+  .additional-products__list {
+    padding: 0 30px;
   }
 
   .additional-products__item {
-    padding: 30px 40px;
-    border-bottom: solid 1px grey;
+    padding: 26px 37px 27px 37px;
+    border: solid 1px #cdcdcd;
+    border-top: 0;
   }
 
   .additional-products__main-title::after,
@@ -77,14 +84,14 @@
     content: "";
     height: 3px;
     background: #68b738;
-    width: 30px;
-    margin: 14px 20px 0 0;
+    width: 28px;
+    margin: 22px 39px 0 0;
   }
 
   .additional-products__main-title::after {
     flex-grow: 1;
     width: 180px;
-    margin: 14px 0 0 20px;
+    margin: 22px 0 0 37px;
   }
 
   .additional-products__wrapper-content {
@@ -93,9 +100,18 @@
     justify-content: space-between;
   }
 
+  .additional-products__item-title {
+    line-height: 20px;
+    font-size: 20px;
+    padding: 0;
+    margin: 0 0 25px 1px;
+  }
+
   .additional-products__wrapper-data {
-    margin: 0;
+    margin: 0 0 19px 0;
     text-align: right;
+    line-height: 20px;
+    font-size: 16px;
   }
 
   .additional-products__data-value {
@@ -106,20 +122,59 @@
 @media (min-width: @desktop-width) {
   .additional-products {
     flex-grow: 1;
+    width: auto;
+    margin-bottom: 0;
   }
 
   .additional-products__main-title {
-    width: @desktop-width;
-    margin: 0 auto;
+    display: flex;
+  }
+
+  .additional-products__list {
+    padding: 0;
+    margin-bottom: 0;
+  }
+
+  .additional-products__wrapper-title {
+    display: block;
+    margin-left: -887px;
+    padding: 0 38px 0 40px;
+    background: #ffffff;
+  }
+
+  .additional-products__main-title::after,
+  .additional-products__main-title::before {
+    width: auto;
+    flex-grow: 1;
   }
 
   .additional-products__item {
+    border-left: 0;
+    border-right: 0;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 895px;
+    padding: 15px 0 16px 0;
+  }
+
+  .additional-products__item-title {
+    margin: 0;
+  }
+
+  .additional-products__wrapper-data {
+    width: 288px;
+    text-align: left;
+    margin: 0;
+    padding-top: 9px;
+  }
+
+  .additional-products__data-value {
+    width: 44px;
   }
 
   .additional-products__wrapper-content {
-    width: 610px;
+    width: 614px;
   }
 
   .additional-products__btn {
