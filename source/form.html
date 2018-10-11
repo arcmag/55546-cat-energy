@@ -11,11 +11,12 @@
       <header class="header-page">
         <h1 class="visually-hidden">Магазин кошачьего корма - Кэт энерджи</h1>
         <a class="header-page__link" href="index.html">
-          <img class="site-logo-mobile" src="img/logo-mobile.svg" width="195" height="40" alt="logo site">
+          <img class="site-logo-mobile" src="img/logo-mobile.svg" width="190" height="37" alt="logo site">
           <img class="site-logo-tablet" src="img/logo-tablet.svg" width="172" height="57" alt="logo site">
           <img class="site-logo-desktop" src="img/logo-desktop.svg" width="202" height="59" alt="logo site">
         </a>
         <nav class="main-nav">
+          <button class="main-nav__btn">Кнопка меню</button>
           <ul class="main-nav__list">
             <li><a class="main-nav__link" href="index.html">Главная</a></li>
             <li><a class="main-nav__link" href="catalog.html">Каталог продукции</a></li>
@@ -28,33 +29,33 @@
           <form class="form program__form" method="post" action="https://echo.htmlacademy.ru">
 
             <h2 class="program__title">Подбор программы</h2>
-            <p class="program__info">Заполните анкету и мы подберём программу питания для вашего кота</p>
+            <p class="program__info">Заполните анкету и мы подберём<br> программу питания для вашего кота</p>
 
             <div class="program__form-top">
-              <fieldset class="form__wrapper-data program__form-wrapper-data">
-                <p class="form__wrapper-field">
+              <fieldset class="form__wrapper-data program__form-wrapper-data program__form-wrapper-data--main">
+                <p class="form__wrapper-field program__form-wrapper-field">
                   <label class="form__label" for="1">Имя:*</label>
                   <input class="form__field form__field--input" id="1" type="text" value="Барсик">
                 </p>
-                <p class="form__wrapper-field">
+                <p class="form__wrapper-field program__form-wrapper-field">
                   <label class="form__label"  for="2">Вес (КГ):*</label>
                   <input class="form__field form__field--input"  id="2" type="text" value="7">
                 </p>
-                <p class="form__wrapper-field">
+                <p class="form__wrapper-field program__form-wrapper-field">
                   <label class="form__label"  for="3">Возраст (лет):</label>
                   <input class="form__field form__field--input"  id="3" type="text" value="7">
                 </p>
               </fieldset>
               <fieldset class="form__wrapper-data program__form-wrapper-data program__form-wrapper-data--type">
-                <p class="form__wrapper-field">
+                <p class="form__wrapper-field program__form-wrapper-field">
                   <input class="form__field form__field--radio" type="radio" id="4" name="r2">
                   <label class="form__label form__label--radio" for="4">Похудение</label>
                 </p>
-                <p class="form__wrapper-field">
+                <p class="form__wrapper-field program__form-wrapper-field">
                   <input class="form__field form__field--radio" type="radio" id="5" name="r2">
                   <label class="form__label form__label--radio" for="5">Набор массы</label>
                 </p>
-                <p class="form__wrapper-field">
+                <p class="form__wrapper-field program__form-wrapper-field">
                   <input class="form__field form__field--radio" type="radio" id="6" name="r2">
                   <label class="form__label form__label--radio" for="6">Не знаю (нужен ваш совет)</label>
                 </p>
@@ -62,63 +63,71 @@
             </div>
 
 
-            <h3 class="form__title program__sub-title">Контактные данные (владелец кота)</h3>
+            <h3 class="form__title program__sub-title program__sub-title--contacts">
+              <span class="program__wrapper-title">Контактные данные (владельца кота)</span>
+            </h3>
             <div class="form__wrapper-data program__form-wrapper-data program__form-wrapper-data--contacts">
-              <p class="form__wrapper-field">
+              <p class="form__wrapper-field program__form-wrapper-field">
                 <label class="form__label" for="7">e-mail:*</label>
                 <input class="form__field form__field--input" id="7" type="email" value="kuklachev@gmail.com">
               </p>
-              <p class="form__wrapper-field">
+              <p class="form__wrapper-field program__form-wrapper-field">
                 <label class="form__label" for="8">Телефон:*</label>
                 <input class="form__field form__field--input" id="8" type="tel" value="8 (960) 900-60-90">
               </p>
             </div>
-            <h3 class="form__title program__sub-title">Комментарий</h3>
+            <h3 class="form__title program__sub-title program__sub-title--comments">
+              <span class="program__wrapper-title">Комментарий</span>
+            </h3>
             <fieldset class="form__wrapper-data program__form-wrapper-data program__form-wrapper-data--comments">
               <textarea class="form__textarea program__form-comment">Расскажите обо всех повадках кота</textarea>
             </fieldset>
-            <h3 class="form__title program__sub-title">Дополнительно</h3>
+            <h3 class="form__title program__sub-title program__sub-title--additional">
+              <span class="program__wrapper-title">Дополнительно</span>
+            </h3>
             <div class="form__wrapper-data program__form-wrapper-data program__form-wrapper-data--additional">
-              <p class="form__wrapper-field">
+              <p class="form__wrapper-field program__form-wrapper-field">
                 <input class="form__field form__field--checkbox" id="9" type="checkbox">
                 <label class="form__label form__label--checkbox" for="9">Сахарозаменитель</label>
               </p>
-              <p class="form__wrapper-field">
+              <p class="form__wrapper-field program__form-wrapper-field">
                 <input class="form__field form__field--checkbox" id="10" type="checkbox">
                 <label class="form__label form__label--checkbox" for="10">Питьевая вода</label>
               </p>
-              <p class="form__wrapper-field">
+              <p class="form__wrapper-field program__form-wrapper-field">
                 <input class="form__field form__field--checkbox" id="11" type="checkbox">
                 <label class="form__label form__label--checkbox" for="11">Молоко</label>
               </p>
-              <p class="form__wrapper-field">
+              <p class="form__wrapper-field program__form-wrapper-field">
                 <input class="form__field form__field--checkbox" id="12" type="checkbox">
                 <label class="form__label form__label--checkbox" for="12">Витамины</label>
               </p>
             </div>
             <div class="program__form-bottom">
-              <button type="submit" class="button">Отправить заявку</button>
+              <button type="submit" class="button program__form-btn">Отправить заявку</button>
               <div class="program__note">* — Обязательные поля</div>
             </div>
           </form>
         </section>
       </main>
       <footer class="footer-page">
-        <div class="footer-page__cooperation-wrapper">
-          <p class="footer-page__cooperation-title">Приглашаем к сотруднечеству дилеров!</p>
-          <address class="footer-page__address">
-            ул. Большая Коношенная, д. 19/8 Санкт-Петербург
-          </address>
+        <div class="footer-page__cooperation-desktop-wrapper">
+          <div class="footer-page__cooperation-wrapper">
+            <p class="footer-page__cooperation-title">Приглашаем<br> к сотрудничеству<br> дилеров!</p>
+            <address class="footer-page__address">
+              ул. Большая Конюшенная, д. 19/8 <span class="footer-page__address-city">Санкт-Петербург</span>
+            </address>
+          </div>
         </div>
         <div class="footer-page__map">
-          <img class="footer-page__map-mobile" src="img/bg-map-mobile@1x.png" width="320" height="360" alt="address map">
+          <img class="footer-page__map-mobile" src="img/bg-map-mobile@1x.png" width="320" height="365" alt="address map">
           <img class="footer-page__map-tablet" src="img/bg-map-tablet@1x.png" alt="address map">
 
           <img class="footer-page__map-desktop" src="img/bg-map-desktop@1x.png" alt="address map">
         </div>
         <div class="footer-page__links-wrapper">
           <a class="footer-page__link" href="index.html">
-            <img class="footer-page__logo" src="img/logo-footer.svg" width="195" height="40" alt="logo site">
+            <img class="footer-page__logo" src="img/logo-footer.svg" width="130" height="25" alt="logo site">
           </a>
           <ul class="footer-page__socials">
             <li><a class="footer-page__social-btn footer-page__social-btn--vk" href="#">vk</a></li>
@@ -127,7 +136,7 @@
           </ul>
           <a class="footer-page__academy-wrapper" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="footer-page__academy-title">HTML Academy</span>
-            <img class="footer-page__academy-logo" src="img/htmlacademy.svg" width="28" height="35" alt="HTML Academy logo">
+            <img class="footer-page__academy-logo" src="img/htmlacademy.svg" alt="HTML Academy logo">
           </a>
         </div>
       </footer>

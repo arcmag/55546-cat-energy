@@ -1,7 +1,7 @@
 .living-example {
   background: #f2f2f2;
   margin: 0 auto;
-  padding: 0 20px 40px 20px;
+  padding: 17px 20px 0 20px;
   width: 320px;
 }
 
@@ -10,28 +10,34 @@
   line-height: 60px;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: normal;
-  margin-bottom: 40px;
+  margin: 0 0 23px 0;
   color: #111111;
 }
 
 .living-example__text {
   margin-bottom: 25px;
+  width: 275px;
 }
 
 .living-example__result {
   .list-reset;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 34px;
 }
 
 .living-example__item {
   width: 45%;
   text-align: center;
-  border: solid 1px grey;
+  border: solid 1px #cdcdcd;
   border-radius: 3px;
+  position: relative;
+  padding: 13px 0 17px 0;
 }
 
 .living-example__item-total-data {
+  padding: 0;
+  margin: 0;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 24px;
@@ -40,10 +46,13 @@
 }
 
 .living-example__item-result-data {
+  position: absolute;
   font-size: 12px;
   line-height: 12px;
-  width: 80%;
-  margin: 0 auto -10px auto;
+  width: 82px;
+  left: 19px;
+  background: #f2f2f2;
+  bottom: -28px;
 }
 
 .living-example__price {
@@ -63,7 +72,13 @@
 
 .living-example__comparison {
   width: 200px;
+  min-height: 317px;
   margin: 0 auto;
+  display: flex;
+}
+
+.living-example__toggler-wrapper {
+  margin: auto 0 37px 0;
 }
 
 .living-example__comparison-label {
@@ -83,31 +98,52 @@
 
   .living-example__title {
     font-size: 60px;
-    margin: 0;
-    padding: 50px 0 70px 30px;
+    margin: 0 0 48px 30px;
   }
 
   .living-example__text {
-    margin: 0 60px 60px 30px;
-    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 53px;
+    width: 700px;
   }
 
   .living-example__wrapper-result {
     display: flex;
-    justify-content: space-between;
     padding: 0 30px;
-    margin-bottom: 250px;
+    margin-bottom: 221px;
     flex-wrap: wrap;
   }
 
   .living-example__result {
-    width: 370px;
+    width: 366px;
     display: flex;
     justify-content: space-between;
   }
 
   .living-example__item {
     width: 162px;
+    padding: 15px 0 18px 0;
+  }
+
+
+  .living-example__item-total-data {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .living-example__item-result-data {
+    font-size: 14px;
+    line-height: 14px;
+    width: auto;
+    bottom: -20px;
+    left: 24px;
+    background: #ffffff;
+    padding: 0 8px;
+  }
+
+  .living-example__item:nth-child(2) .living-example__item-result-data {
+    left: 9px;
   }
 
   .living-example__price {
@@ -115,12 +151,19 @@
     font-size: 20px;
     line-height: 20px;
     text-align: right;
+    width: 190px;
+    margin-top: 12px;
+  }
+
+  .living-example__price-line {
+    display: block;
+    margin-bottom: 9px;
   }
 
   .living-example__comparison {
     background: #f2f2f2;
     width: 100%;
-    min-height: 460px;
+    min-height: 462px;
     display: flex;
   }
 
@@ -131,41 +174,62 @@
 
 @media (min-width: @desktop-width) {
   .living-example {
-    width: @desktop-width;
+    width: auto;
     background: #f2f2f2;
     position: relative;
-    display: flex;
-    margin-bottom: 273px;
+    padding-bottom: 67px;
   }
 
   .living-example__title {
-    margin: 0;
-    top: -190px;
-    padding-left: 110px;
-    position: absolute;
+    top: -136px;
+    position: relative;
+    width: 1220px;
+    margin: 0 auto 10px auto;
   }
 
   .living-example__text {
     padding: 0;
-    margin: 0 0 70px 0;
+    margin: 0 0 68px 0;
     width: 450px;
+  }
+
+  .living-example__wrapper-content {
+    width: 1220px;
+    margin: 0 auto;
+    position: relative;
   }
 
   .living-example__wrapper-result {
     display: block;
-    margin: 0;
     padding: 0;
-    padding-left: 110px;
+    margin-bottom: 0;
+    width: 450px;
+  }
+
+  .living-example__result {
+    margin-bottom: 60px;
+  }
+
+  .living-example__item-result-data {
+    background: #f2f2f2;
   }
 
   .living-example__price {
+    margin: 0;
+    width: 327px;
     text-align: left;
+    display: flex;
+    justify-content: space-between;
   }
 
   .living-example__comparison {
-    width: 50%;
-    min-height: 460px;
+    width: 610px;
+    min-height: 590px;
     display: flex;
+    outline: solid 1px red;
+    position: absolute;
+    bottom: 0;
+    right: 0;
   }
 
   .living-example__toggler-wrapper {
