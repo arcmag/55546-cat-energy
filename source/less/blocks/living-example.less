@@ -71,14 +71,17 @@
 }
 
 .living-example__comparison {
-  width: 200px;
+  // width: 200px;
   min-height: 317px;
   margin: 0 auto;
   display: flex;
 }
 
 .living-example__toggler-wrapper {
-  margin: auto 0 37px 0;
+  margin: auto auto 35px 43px;
+  width: 198px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .living-example__comparison-label {
@@ -87,7 +90,38 @@
   line-height: 20px;
   color: #111111;
   text-transform: uppercase;
+  position: relative;
 }
+
+.living-example__comparison-label--before::before,
+.living-example__comparison-label--before::after {
+  content: "";
+  position: absolute;
+  border-radius: 5px;
+}
+
+.living-example__comparison-label--before::before {
+  right: -103px;
+  top: 2px;
+  width: 85px;
+  height: 14px;
+  background: #ffffff;
+  border: solid 1px #cdcdcd;
+  border-radius: 5px;
+}
+
+.living-example__comparison-label--before::after {
+  right: -59px;
+  top: 6px;
+  width: 35px;
+  height: 6px;
+  background: #68b738;
+}
+
+.living-example__comparison-btn {
+  display: none;
+}
+
 
 @media (min-width: @tablet-width) {
   .living-example {
@@ -125,7 +159,6 @@
     width: 162px;
     padding: 15px 0 18px 0;
   }
-
 
   .living-example__item-total-data {
     font-size: 30px;
@@ -168,7 +201,54 @@
   }
 
   .living-example__toggler-wrapper {
-    margin: auto auto 70px auto;
+    margin: auto auto 69px auto;
+    width: 571px;
+    position: relative;
+  }
+
+  .living-example__toggler-wrapper::before,
+  .living-example__toggler-wrapper::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    z-index: 2;
+  }
+
+  .living-example__toggler-wrapper::before {
+    width: 35px;
+    height: 35px;
+    background: #ffffff;
+    left: 267px;
+    top: -6px;
+    border: solid 1px #cdcdcd;
+    box-shadow: 0px 0px 3px #cccccc;
+  }
+
+  .living-example__toggler-wrapper::after {
+    left: 281px;
+    top: 7px;
+    width: 8px;
+    height: 8px;
+    background: #68b738;
+  }
+
+  .living-example__comparison-label--before::before {
+    right: -452px;
+    top: 8px;
+    width: 427px;
+    height: 6px;
+    border: 0;
+    background: #dcdcdc;
+  }
+
+  .living-example__comparison-label--before::after {
+    display: none;
+  }
+
+  .living-example__comparison-label {
+    font-size: 20px;
+    border-bottom: dotted 1px #b8b8b8;
+    padding-bottom: 5px;
   }
 }
 
@@ -226,7 +306,7 @@
 
   .living-example__comparison {
     background: none;
-    width: 610px;
+    width: 571px;
     min-height: 590px;
     display: flex;
     outline: solid 1px red;
@@ -236,6 +316,6 @@
   }
 
   .living-example__toggler-wrapper {
-    margin: auto auto 70px auto;
+    margin: auto auto 3px auto;
   }
 }
