@@ -50,17 +50,20 @@
   }
 
   .main-nav__link {
-    padding: 0;
+    padding: 0 0 7px 0;
     margin: 0;
     font-weight: normal;
     border: 0;
+  }
+
+  .main-nav__link--active {
+    border-bottom: solid 2px #68b738;
   }
 
   .main-nav__btn {
     display: none;
   }
 }
-
 
 @media (min-width: @desktop-width) {
   .main-nav {
@@ -71,6 +74,13 @@
   .main-nav__link {
     font-size: 20px;
     line-height: 25px;
+  }
+
+  .main-nav--main-page .main-nav__link {
     color: #ffffff;
+  }
+
+  .main-nav--main-page .main-nav__link--active {
+    border-bottom: solid 2px #ffffff;
   }
 }

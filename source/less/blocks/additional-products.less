@@ -1,6 +1,6 @@
 .additional-products {
   width: 320px;
-  margin: 0 auto;
+  margin: 0 auto 39px auto;
 }
 
 .additional-products__main-title {
@@ -8,14 +8,31 @@
   font-size: 24px;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: normal;
-  margin: 0;
-  padding: 0 0 34px 19px;
+  margin: 0 auto 34px auto;
+  width: 320px;
+  padding-left: 19px;
+  display: flex;
+}
+
+.additional-products__main-title::after {
+  content: "";
+  height: 3px;
+  background: #68b738;
+  margin: 14px 0 0 0px;
+  flex-grow: 1;
+}
+
+.additional-products__wrapper-title {
+  flex-grow: 1;
+  width: 194px;
+  background: #ffffff;
+  display: block;
+  z-index: 2;
 }
 
 .additional-products__list {
   .list-reset;
   padding: 0 20px;
-  margin-bottom: 40px;
 }
 
 .additional-products__item {
@@ -34,7 +51,7 @@
   font-size: 16px;
   line-height: 16px;
   font-weight: normal;
-  margin: 0 0 15px 0;
+  margin: 0 0 13px 0;
   padding-left: 1px;
 }
 
@@ -57,12 +74,12 @@
 @media (min-width: @tablet-width) {
   .additional-products {
     width: @tablet-width;
-    margin-bottom: 70px;
+    margin-bottom: 69px;
   }
 
   .additional-products__main-title {
-    display: flex;
-    padding: 0 0 80px 0;
+    width: @tablet-width;
+    padding: 0 0 46px 0;
     line-height: 36px;
     font-size: 36px;
   }
@@ -77,19 +94,24 @@
     border-top: 0;
   }
 
-  .additional-products__main-title::after,
   .additional-products__main-title::before {
     content: "";
     height: 3px;
     background: #68b738;
-    width: 28px;
     margin: 22px 39px 0 0;
+    width: auto;
+    flex-grow: 1;
   }
 
   .additional-products__main-title::after {
-    flex-grow: 1;
-    width: 180px;
-    margin: 22px 0 0 37px;
+    margin: 22px 0 0 2px;
+  }
+
+  .additional-products__wrapper-title {
+    width: 420px;
+    flex-grow: 0;
+    margin-left: -328px;
+    padding: 0 40px 0 40px;
   }
 
   .additional-products__wrapper-content {
@@ -126,6 +148,7 @@
 
   .additional-products__main-title {
     display: flex;
+    width: auto;
   }
 
   .additional-products__list {
@@ -134,7 +157,6 @@
   }
 
   .additional-products__wrapper-title {
-    display: block;
     margin-left: -887px;
     padding: 0 38px 0 40px;
     background: #ffffff;

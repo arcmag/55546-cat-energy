@@ -101,13 +101,18 @@
     counter-increment: counter-num;
     content: counter(counter-num);
     position: absolute;
-    right: 0;
-    top: -160px;
+    right: -23px;
+    top: -151px;
     font-size: 281px;
     line-height: 281px;
     color: #f2f2f2;
     font-family: "Oswald", "Arial", sans-serif;
     z-index: -1;
+  }
+
+  .advantages__item:nth-child(1) p::after {
+    right: -4px;
+    top: -152px;
   }
 
   .advantages__item::before {
@@ -143,5 +148,13 @@
   .advantages__item p {
     margin: 0;
     width: auto;
+  }
+
+  .advantages__item p::after {
+    right: -3px;
+  }
+
+  .advantages__item:nth-child(1) p::after {
+    right: 18px;
   }
 }
