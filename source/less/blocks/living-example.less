@@ -100,6 +100,8 @@
   width: 198px;
   display: flex;
   justify-content: space-between;
+  position: relative;
+  align-items: center;
 }
 
 .living-example__comparison-label {
@@ -111,35 +113,29 @@
   position: relative;
 }
 
-.living-example__comparison-label--before::before,
-.living-example__comparison-label--before::after {
-  content: "";
-  position: absolute;
-  border-radius: 5px;
-}
-
-.living-example__comparison-label--before::before {
-  right: -103px;
-  top: 2px;
-  width: 85px;
-  height: 14px;
-  background: #ffffff;
-  border: solid 1px #cdcdcd;
-  border-radius: 5px;
-}
-
-.living-example__comparison-label--before::after {
-  right: -59px;
-  top: 6px;
-  width: 35px;
-  height: 6px;
-  background: #68b738;
-}
-
 .living-example__comparison-btn {
   display: none;
 }
 
+.living-example__wrapper-range {
+  margin-top: -1px;
+  width: 85px;
+  height: 14px;
+  background: #ffffff;
+  border: solid 1px #cdcdcd;
+  border-radius: 7px;
+}
+
+.living-example__range-btn {
+  position: absolute;
+  left: 62px;
+  top: 6px;
+  width: 35px;
+  height: 6px;
+  background: #68b738;
+  border: 0;
+  border-radius: 5px;
+}
 
 @media (min-width: @tablet-width) {
   .living-example {
@@ -233,15 +229,15 @@
     position: relative;
   }
 
-  .living-example__toggler-wrapper::before,
-  .living-example__toggler-wrapper::after {
-    content: "";
-    position: absolute;
-    border-radius: 50%;
-    z-index: 2;
+  .living-example__wrapper-range {
+    margin-top: -4px;
+    width: 427px;
+    height: 6px;
+    border: 0;
+    background: #dcdcdc;
   }
 
-  .living-example__toggler-wrapper::before {
+  .living-example__range-btn {
     width: 35px;
     height: 35px;
     background: #ffffff;
@@ -249,27 +245,31 @@
     top: -6px;
     border: solid 1px #cdcdcd;
     box-shadow: 0 0 3px #cccccc;
+    border-radius: 50%;
   }
 
-  .living-example__toggler-wrapper::after {
-    left: 281px;
-    top: 7px;
+  .living-example__range-btn::after {
+    content: "";
+    position: absolute;
+    left: 13px;
+    top: 12px;
+    border-radius: 50%;
     width: 8px;
     height: 8px;
     background: #68b738;
   }
 
-  .living-example__comparison-label--before::before {
-    right: -452px;
-    top: 8px;
-    width: 427px;
-    height: 6px;
-    border: 0;
-    background: #dcdcdc;
+  .living-example__range-btn:hover {
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
   }
 
-  .living-example__comparison-label--before::after {
-    display: none;
+  .living-example__range-btn:active {
+    border: solid 2px #68b738;
+  }
+
+  .living-example__range-btn:active::after {
+    top: 11px;
+    left: 12px;
   }
 
   .living-example__comparison-label {

@@ -59,6 +59,13 @@
   padding: 37px 0 27px 0;
 }
 
+.footer-page__link:hover {
+  opacity: 0.8;
+}
+.footer-page__link:active {
+  opacity: 0.6;
+}
+
 .footer-page__socials {
   .list-reset;
   display: flex;
@@ -108,10 +115,18 @@
 }
 
 .footer-page__academy-wrapper path,
-.footer-page__social-btn--inst path,
-.footer-page__social-btn--vk path,
-.footer-page__social-btn--fb path {
+.footer-page__social-btn path {
   fill: #666666;
+}
+
+.footer-page__academy-wrapper:hover path,
+.footer-page__social-btn:hover path {
+  fill: #68b738;
+}
+
+.footer-page__academy-wrapper:active,
+.footer-page__social-btn:active {
+  opacity: 0.3;
 }
 
 @media (min-width: @tablet-width) {
@@ -246,10 +261,8 @@
   }
 
   .footer-page__map {
-    background: url("../img/bg-map-desktop@1x.png") 0 0;
+    background: url("../img/bg-map-desktop@1x.png") no-repeat center top;
     height: 400px;
-    width: 1440px;
-    margin: 0 auto;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/bg-map-desktop@2x.png");

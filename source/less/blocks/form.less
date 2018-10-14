@@ -31,6 +31,16 @@
   text-transform: uppercase;
   font-size: 16px;
   line-height: 18px;
+  outline: 0;
+}
+
+.form__textarea:focus,
+.form__field:focus {
+  border: solid 2px #444444;
+}
+
+.form__field--error {
+  border: solid 2px #ff8282;
 }
 
 .form__textarea {
@@ -61,6 +71,10 @@
 .form__label--radio {
   padding: 10px 0 10px 50px;
   position: relative;
+}
+
+.form__label--radio:active {
+  opacity: 0.3;
 }
 
 .form__label--radio::before {
@@ -95,6 +109,10 @@
 .form__label--checkbox {
   padding: 10px 0 10px 46px;
   position: relative;
+}
+
+.form__label--checkbox:active {
+  opacity: 0.3;
 }
 
 .form__label--checkbox::before {
