@@ -19,9 +19,13 @@
   background: url("../img/icon-plus-mobile.svg");
 }
 
+.product-item--other .product-item__btn {
+  margin-top: 26px;
+}
+
 .product-item__main-wrapper {
   display: flex;
-  margin-bottom: 22px;
+  margin-bottom: -4px;
 }
 
 .product-item--other .product-item__main-wrapper {
@@ -35,12 +39,7 @@
 }
 
 .product-item__wrapper-img {
-  height: 95px;
-}
-
-.product-item__wrapper-img img {
-  width: 100%;
-  height: 100%;
+  margin-top: -25px;
 }
 
 .product-item__title {
@@ -88,13 +87,14 @@
 
 @media (min-width: @tablet-width) {
   .product-item {
-    padding: 162px 38px 40px 38px;
-    width: 325px;
+    padding: 163px 0 0 0;
+    width: 324px;
     border: 0;
     text-align: center;
     background: #f2f2f2;
-    min-height: 430px;
-    margin-top: 141px;
+    min-height: 431px;
+    margin-top: 140px;
+    position: relative;
   }
 
   .product-item--other {
@@ -127,11 +127,12 @@
 
   .product-item--other .product-item__btn {
     margin-top: auto;
+    margin-bottom: 38px;
   }
 
   .product-item__main-wrapper {
     display: block;
-    position: relative;
+    position: static;
   }
 
   .product-item__wrapper-img,
@@ -140,16 +141,21 @@
   }
 
   .product-item__sub-wrapper {
-    width: 100%;
+    width: auto;
+    margin: 0 38px 40px 38px;
   }
 
   .product-item__wrapper-img {
     width: auto;
     height: auto;
-    outline: solid 1px red;
     position: absolute;
-    top: -200px;
-    left: 50px;
+    left: 0;
+    bottom: 301px;
+    z-index: 2;
+  }
+
+  .product-item__img {
+    max-width: 100%;
   }
 
   .product-item__title {
@@ -168,10 +174,14 @@
   }
 
   .product-item__list {
-    margin-bottom: 33px;
+    margin-bottom: -7px;
+  }
+
+  .product-item__btn {
+    width: auto;
+    margin: 0 38px;
   }
 }
-
 
 @media (min-width: @desktop-width) {
   .product-item {
@@ -200,9 +210,17 @@
     width: 167px;
   }
 
+  .product-item--other .product-item__btn {
+    margin-bottom: -2px;
+  }
+
   .product-item__wrapper-img,
   .product-item__sub-wrapper {
     width: 100%;
+  }
+
+  .product-item__sub-wrapper {
+    margin: 0;
   }
 
   .product-item__title {
@@ -211,12 +229,14 @@
   }
 
   .product-item__list {
-    margin-bottom: 32px;
+    margin-bottom: 36px;
   }
 
   .product-item__wrapper-img {
-    top: auto;
-    bottom: 205px;
-    left: 2px;
+    bottom: 300px;
+  }
+
+  .product-item__btn {
+    margin: 0;
   }
 }
