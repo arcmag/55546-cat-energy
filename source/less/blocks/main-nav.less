@@ -20,6 +20,14 @@
   color: #111111;
 }
 
+.main-nav__link:hover {
+  opacity: 0.6;
+}
+
+.main-nav__link:active {
+  opacity: 0.3;
+}
+
 .main-nav__link--last-link {
   border-bottom: solid 1px #d9d9d9;
 }
@@ -50,17 +58,20 @@
   }
 
   .main-nav__link {
-    padding: 0;
+    padding: 0 0 7px 0;
     margin: 0;
     font-weight: normal;
     border: 0;
+  }
+
+  .main-nav__link--active {
+    border-bottom: solid 2px #68b738;
   }
 
   .main-nav__btn {
     display: none;
   }
 }
-
 
 @media (min-width: @desktop-width) {
   .main-nav {
@@ -71,6 +82,13 @@
   .main-nav__link {
     font-size: 20px;
     line-height: 25px;
+  }
+
+  .main-nav--main-page .main-nav__link {
     color: #ffffff;
+  }
+
+  .main-nav--main-page .main-nav__link--active {
+    border-bottom: solid 2px #ffffff;
   }
 }
