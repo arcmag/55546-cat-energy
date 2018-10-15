@@ -216,11 +216,28 @@
   }
 
   .living-example__wrapper-image {
-    margin: -169px auto 15px 46px;
+    margin: -169px auto 15px 0;
+    position: relative;
+    display: flex;
+  }
+
+  .living-example__wrapper-after,
+  .living-example__wrapper-before {
+    width: 50%;
+    overflow: hidden;
+  }
+
+  .living-example__image--after {
+    margin-left: -338px;
+  }
+
+  .living-example__image--before {
+    margin-left: 46px;
   }
 
   .product-living-example__image {
-    max-width: 100%;
+    max-width: 180%;
+    display: block;
   }
 
   .living-example__toggler-wrapper {
@@ -283,7 +300,6 @@
   .living-example {
     width: auto;
     position: relative;
-    padding-bottom: 68px;
     background: linear-gradient(90deg, #f2f2f2 0%, #f2f2f2 75%, #eaeaea 75%);
   }
 
@@ -301,14 +317,14 @@
   }
 
   .living-example__wrapper-content {
-    width: 1220px;
+    width: @desktop-width;
     margin: 0 auto;
-    position: relative;
+    display: flex;
   }
 
   .living-example__wrapper-result {
     display: block;
-    padding: 0;
+    padding: 0 0 0 40px;
     margin-bottom: 0;
     width: 450px;
   }
@@ -331,20 +347,52 @@
 
   .living-example__comparison {
     background: none;
-    width: 571px;
-    min-height: 590px;
     display: flex;
-    outline: solid 1px red;
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    min-height: 680px;
+    margin: -287px 0 0 auto;
+    width: 650px;
+    position: relative;
   }
 
   .living-example__wrapper-image {
-    margin: auto auto 15px 0;
+    margin: 0 0 0 0;
+    height: 100%;
+  }
+
+  .product-living-example__image {
+    max-width: 215%;
+    position: relative;
+    z-index: 2;
+  }
+
+  .living-example__image--before {
+    margin-top: 26px;
+    margin-left: -40px;
+  }
+
+  .living-example__wrapper-after {
+    position: relative;
+  }
+
+  .living-example__wrapper-after::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 462px;
+    left: 0;
+    bottom: 0;
+    background: #eaeaea;
+  }
+
+  .living-example__image--after {
+    margin-top: 26px;
+    margin-left: -365px;
   }
 
   .living-example__toggler-wrapper {
+    position: absolute;
+    bottom: 67px;
+    left: 39px;
     margin: auto auto 3px auto;
   }
 }
