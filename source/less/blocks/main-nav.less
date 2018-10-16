@@ -9,11 +9,14 @@
 .main-nav__list {
   .list-reset;
   text-align: center;
-  display: none;
 }
 
 .main-nav--no-js .main-nav__list {
   display: block;
+}
+
+.main-nav__list--hidden {
+  display: none;
 }
 
 .main-nav__link {
@@ -45,6 +48,10 @@
   width: 24px;
   height: 18px;
   background: url("../img/icon-mobile-menu.svg");
+}
+
+.main-nav--no-js .main-nav__btn {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
