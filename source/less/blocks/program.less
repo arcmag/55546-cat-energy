@@ -61,10 +61,15 @@
   height: 21px;
 }
 
+.form__field + svg {
+  fill: #222222;
+}
+
 .form__field:focus + svg {
   fill: #68b738;
 }
 
+.form__field:invalid + svg,
 .form__field--error + svg {
   fill: #ff8282;
 }
