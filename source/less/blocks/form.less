@@ -36,11 +36,13 @@
 
 .form__textarea:focus,
 .form__field:focus {
-  border: solid 2px #444444;
+  outline: solid 2px #444444;
 }
 
+.form__textarea:invalid,
+.form__field:invalid,
 .form__field--error {
-  border: solid 2px #ff8282;
+  outline: solid 2px #ff8282;
 }
 
 .form__textarea {

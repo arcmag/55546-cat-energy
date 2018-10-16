@@ -9,7 +9,14 @@
 .main-nav__list {
   .list-reset;
   text-align: center;
+}
+
+.main-nav--hidden-list .main-nav__list {
   display: none;
+}
+
+.main-nav--no-js .main-nav__list {
+  display: block;
 }
 
 .main-nav__link {
@@ -40,7 +47,15 @@
   border: 0;
   width: 24px;
   height: 18px;
-  background: url("../img/icon-mobile-menu.svg");
+  background: url("../img/icon-close.svg") no-repeat;
+}
+
+.main-nav--hidden-list .main-nav__btn {
+  background: url("../img/icon-mobile-menu.svg") no-repeat;
+}
+
+.main-nav--no-js .main-nav__btn {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -55,6 +70,11 @@
     display: flex;
     justify-content: space-between;
     margin-top: 17px;
+  }
+
+  .main-nav--hidden-list .main-nav__list,
+  .main-nav--no-js .main-nav__list {
+    display: flex;
   }
 
   .main-nav__link {
