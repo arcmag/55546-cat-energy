@@ -67,10 +67,6 @@ gulp.task("copy", function () {
     }).pipe(gulp.dest("build"));
 });
 
-gulp.task("check", function () {
-  console.log("Проверка");
-});
-
 gulp.task("server", function () {
   server.init({
     server: "build/",
