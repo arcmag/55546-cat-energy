@@ -1,5 +1,5 @@
 document.querySelector(".main-nav--no-js").classList.remove("main-nav--no-js");
 
-document.querySelector(".main-nav").addEventListener("click", function () {
-  this.classList.toggle("main-nav--hidden-list");
+document.querySelector(".main-nav__btn").addEventListener("click", function () {
+  document.querySelector(".main-nav").classList.toggle("main-nav--hidden-list");
 });
