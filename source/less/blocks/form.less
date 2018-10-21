@@ -67,7 +67,13 @@
 }
 
 .form__field--radio {
-  display: none;
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
 }
 
 .form__label--radio {
@@ -75,6 +81,7 @@
   position: relative;
 }
 
+.form__field--radio:focus + .form__label--radio,
 .form__label--radio:active {
   opacity: 0.3;
 }
@@ -104,12 +111,14 @@
   background: #68b738;
 }
 
-.form__label--radio:focus {
-  opacity: 0.3;
-}
-
 .form__field--checkbox {
-  display: none;
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
 }
 
 .form__label--checkbox {
@@ -117,6 +126,7 @@
   position: relative;
 }
 
+.form__field--checkbox:focus + .form__label--checkbox,
 .form__label--checkbox:active {
   opacity: 0.3;
 }
