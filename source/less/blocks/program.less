@@ -8,7 +8,7 @@
 }
 
 .program__form-wrapper-data {
-  padding: 20px 20px 9px 17px;
+  padding: 20px 20px 9px 19px;
 }
 
 .program__form-wrapper-data--main,
@@ -29,6 +29,7 @@
   margin-bottom: 4px;
   padding-left: 18px;
   padding-right: 18px;
+  min-height: 182px;
 }
 
 .program__form-comment {
@@ -59,19 +60,6 @@
   top: 12px;
   width: 19px;
   height: 21px;
-}
-
-.form__field + svg {
-  fill: #222222;
-}
-
-.form__field:focus + svg {
-  fill: #68b738;
-}
-
-.form__field:invalid + svg,
-.form__field--error + svg {
-  fill: #ff8282;
 }
 
 .program__form-wrapper-data--type .program__form-wrapper-field {
@@ -237,7 +225,7 @@
   }
 
   .program__form-wrapper-data--main {
-    margin-bottom: 52px;
+    margin-bottom: 72px;
   }
 
   .program__form-wrapper-data--main .program__form-wrapper-field {
@@ -288,7 +276,7 @@
   }
 
   .program__form-wrapper-data--comments {
-    margin-bottom: 47px;
+    margin-bottom: 42px;
   }
 
   .program__form-wrapper-data--additional {
@@ -342,12 +330,21 @@
     font-size: 16px;
     line-height: 16px;
   }
+
+  .program__field {
+    min-height: 52px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .program__form {
     width: auto;
     margin: 0;
+  }
+
+  .program__label {
+    text-align: left;
+    margin-right: auto;
   }
 
   .program__title {
@@ -359,6 +356,10 @@
   .program__info {
     margin: 0 auto 65px auto;
     width: 1218px;
+  }
+
+  .program__info-wrapper {
+    width: 340px;
   }
 
   .program__info br {
@@ -428,7 +429,7 @@
   }
 
   .program__form-wrapper-data--comments {
-    margin: 0 auto 49px auto;
+    margin: 0 auto 44px auto;
     width: 1218px;
   }
 
