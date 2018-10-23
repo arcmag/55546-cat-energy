@@ -10,12 +10,11 @@
   </head>
   <body class="form-page">
     <header class="header-page">
-      <h1 class="visually-hidden">Магазин кошачьего корма - Кэт энерджи</h1>
       <a class="header-page__link" href="index.html">
         <picture>
           <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-          <img width="193" height="43" class="page-header__logo-image" src="img/logo-mobile.svg" alt="Кэт энерджи">
+          <img width="193" height="43" class="header-page__logo-image" src="img/logo-mobile.svg" alt="Кэт энерджи">
         </picture>
       </a>
       <nav class="main-nav main-nav--no-js main-nav--hidden-list">
@@ -23,7 +22,7 @@
         <ul class="main-nav__list">
           <li><a class="main-nav__link" href="index.html">Главная</a></li>
           <li><a class="main-nav__link" href="catalog.html">Каталог продукции</a></li>
-          <li><a class="main-nav__link main-nav__link--last-link main-nav__link--active" href="form.html">Подбор программы</a></li>
+          <li><a class="main-nav__link main-nav__link--last-link main-nav__link--active">Подбор программы</a></li>
         </ul>
       </nav>
     </header>
@@ -31,27 +30,29 @@
       <section class="program">
         <form class="form program__form" method="post" action="https://echo.htmlacademy.ru">
 
-          <h2 class="program__title">Подбор программы</h2>
-          <p class="program__info">Заполните анкету и мы подберём<br> программу питания для вашего кота</p>
+          <h1 class="program__title">Подбор программы</h1>
+          <div class="program__info">
+            <div class="program__info-wrapper">Заполните анкету и мы подберём программу питания для вашего кота</div>
+          </div>
 
           <div class="program__form-top">
-            <fieldset class="form__wrapper-data program__form-wrapper-data program__form-wrapper-data--main">
+            <div class="form__wrapper-data program__form-wrapper-data program__form-wrapper-data--main">
               <p class="form__wrapper-field program__form-wrapper-field">
-                <label class="form__label" for="program-name">Имя:*</label>
-                <input class="form__field form__field--input" id="program-name" type="text" value="Барсик" name="program-name">
+                <label class="program__label form__label" for="program-name">Имя:*</label>
+                <input required class="program__field form__field form__field--input" id="program-name" type="text" value="Барсик" name="program-name">
               </p>
               <p class="form__wrapper-field program__form-wrapper-field">
-                <label class="form__label" for="program-weight">Вес (КГ):*</label>
-                <input class="form__field form__field--input" id="program-weight" type="text" value="7" name="program-weight">
+                <label class="program__label form__label" for="program-weight">Вес (КГ):*</label>
+                <input required class="program__field form__field form__field--input" id="program-weight" type="text" value="7" name="program-weight">
               </p>
               <p class="form__wrapper-field program__form-wrapper-field">
-                <label class="form__label" for="program-age">Возраст (лет):</label>
-                <input class="form__field form__field--input" id="program-age" type="text" value="7" name="program-age">
+                <label class="program__label form__label" for="program-age">Возраст&nbsp;(лет):</label>
+                <input class="program__field form__field form__field--input" id="program-age" type="text" value="7" name="program-age">
               </p>
-            </fieldset>
+            </div>
             <fieldset class="form__wrapper-data program__form-wrapper-data program__form-wrapper-data--type">
               <p class="form__wrapper-field program__form-wrapper-field">
-                <input tabindex="0" class="form__field form__field--radio" type="radio" id="program-type-slimming" name="program-type">
+                <input checked tabindex="0" class="form__field form__field--radio" type="radio" id="program-type-slimming" name="program-type">
                 <label class="form__label form__label--radio" for="program-type-slimming">Похудение</label>
               </p>
               <p class="form__wrapper-field program__form-wrapper-field">
@@ -72,12 +73,12 @@
           <div class="form__wrapper-data program__form-wrapper-data program__form-wrapper-data--contacts">
             <p class="form__wrapper-field program__form-wrapper-field">
               <label class="form__label" for="program-email">e-mail:*</label>
-              <input class="form__field form__field--input program__input-email" id="program-email" type="email" value="kuklachev@gmail.com" name="program-email">
+              <input required class="program__field form__field form__field--input program__input-email" id="program-email" type="email" value="kuklachev@gmail.com" name="program-email">
               <svg width="40" height="40"><use xlink:href="img/sprite.svg#icon-mail"></use></svg>
             </p>
             <p class="form__wrapper-field program__form-wrapper-field">
               <label class="form__label" for="program-tel">Телефон:*</label>
-              <input class="form__field form__field--input program__input-tel" id="program-tel" type="tel" value="8 (960) 900-60-90" name="program-tel">
+              <input required class="program__field form__field form__field--input program__input-tel" id="program-tel" type="tel" value="8 (960) 900-60-90" name="program-tel">
               <svg width="40" height="40"><use xlink:href="img/sprite.svg#icon-phone"></use></svg>
             </p>
           </div>
@@ -100,7 +101,7 @@
 
           <div class="form__wrapper-data program__form-wrapper-data program__form-wrapper-data--additional">
             <p class="form__wrapper-field program__form-wrapper-field">
-              <input class="form__field form__field--checkbox" id="program-additional-sweetener" type="checkbox" name="program-additional-sweetener">
+              <input checked class="form__field form__field--checkbox" id="program-additional-sweetener" type="checkbox" name="program-additional-sweetener">
               <label class="form__label form__label--checkbox" for="program-additional-sweetener">Сахарозаменитель</label>
             </p>
             <p class="form__wrapper-field program__form-wrapper-field">
@@ -126,7 +127,7 @@
     <footer class="footer-page">
       <div class="footer-page__cooperation-desktop-wrapper">
         <div class="footer-page__cooperation-wrapper">
-          <p class="footer-page__cooperation-title">Приглашаем<br> к сотрудничеству<br> дилеров!</p>
+          <p class="footer-page__cooperation-title">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
           <address class="footer-page__address">
             ул. Большая Конюшенная, д. 19/8 <span class="footer-page__address-city">Санкт-Петербург</span>
           </address>

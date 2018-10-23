@@ -66,6 +66,19 @@
   color: #444444;
 }
 
+.form__field + svg {
+  fill: #222222;
+}
+
+.form__field:focus + svg {
+  fill: #68b738;
+}
+
+.form__field:invalid + svg,
+.form__field--error + svg {
+  fill: #ff8282;
+}
+
 .form__field--radio {
   position: absolute;
   clip: rect(1px, 1px, 1px, 1px);
@@ -79,6 +92,7 @@
 .form__label--radio {
   padding: 10px 0 10px 50px;
   position: relative;
+  flex-grow: 1;
 }
 
 .form__field--radio:focus + .form__label--radio,
@@ -124,6 +138,7 @@
 .form__label--checkbox {
   padding: 10px 0 10px 46px;
   position: relative;
+  flex-grow: 1;
 }
 
 .form__field--checkbox:focus + .form__label--checkbox,

@@ -20,6 +20,7 @@
   min-height: 479px;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .header-content__title {
@@ -41,6 +42,10 @@
   font-size: 14px;
   line-height: 18px;
   margin-top: auto;
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 @media (min-width: @tablet-width) {
@@ -96,6 +101,7 @@
     padding: 16px 25px;
     margin-left: 2px;
     width: 243px;
+    position: static;
   }
 }
 
