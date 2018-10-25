@@ -70,8 +70,9 @@
 .footer-page__socials {
   .list-reset;
   display: flex;
-  justify-content: space-between;
-  padding: 22px 82px 9px 70px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 22px 0 9px 0;
   border-bottom: solid 1px #d9d9d9;
   border-top: solid 1px #d9d9d9;
   margin-bottom: 19px;
@@ -79,9 +80,16 @@
 }
 
 .footer-page__social-btn {
-  font-size: 0;
   display: block;
   background: no-repeat center center;
+}
+
+.footer-page__socials-item {
+  margin-left: 38px;
+}
+
+.footer-page__socials-item:first-child {
+  margin-left: -10px;
 }
 
 .footer-page__social-btn--vk svg {
@@ -225,7 +233,6 @@
     border: 0;
     padding: 0;
     margin: 6px 0 0 15px;
-    width: 130px;
   }
 
   .footer-page__social-btn--vk svg {
@@ -241,6 +248,14 @@
   .footer-page__social-btn--fb svg {
     width: 17px;
     height: 29px;
+  }
+
+  .footer-page__socials-item {
+    margin-left: 26px;
+  }
+
+  .footer-page__socials-item:first-child {
+    margin-left: -3px;
   }
 
   .footer-page__academy-wrapper {
