@@ -36,20 +36,22 @@
           <div class="program__info">
             <div class="program__info-wrapper">Заполните анкету и мы подберём программу питания для вашего кота</div>
           </div>
-
+          <!--
+            при возникновении ошибки, состояние поля ввода меняется с добавлением класса form__field--error
+          -->
           <div class="program__form-top">
             <div class="form__wrapper-data program__form-wrapper-data program__form-wrapper-data--main">
               <p class="form__wrapper-field program__form-wrapper-field">
                 <label class="program__label form__label" for="program-name">Имя:*</label>
-                <input required class="program__field form__field form__field--input" id="program-name" type="text" value="Барсик" name="program-name">
+                <input required class="program__field form__field form__field--input" id="program-name" type="text" placeholder="Барсик" name="program-name">
               </p>
               <p class="form__wrapper-field program__form-wrapper-field">
                 <label class="program__label form__label" for="program-weight">Вес (КГ):*</label>
-                <input required class="program__field form__field form__field--input" id="program-weight" type="text" value="7" name="program-weight">
+                <input required class="program__field form__field form__field--input" id="program-weight" type="text" placeholder="7" name="program-weight">
               </p>
               <p class="form__wrapper-field program__form-wrapper-field">
                 <label class="program__label form__label" for="program-age">Возраст&nbsp;(лет):</label>
-                <input class="program__field form__field form__field--input" id="program-age" type="text" value="7" name="program-age">
+                <input class="program__field form__field form__field--input" id="program-age" type="text" placeholder="7" name="program-age">
               </p>
             </div>
             <fieldset class="form__wrapper-data program__form-wrapper-data program__form-wrapper-data--type">
@@ -75,12 +77,12 @@
           <div class="form__wrapper-data program__form-wrapper-data program__form-wrapper-data--contacts">
             <p class="form__wrapper-field program__form-wrapper-field">
               <label class="form__label" for="program-email">e-mail:*</label>
-              <input required class="program__field form__field form__field--input program__input-email" id="program-email" type="email" value="kuklachev@gmail.com" name="program-email">
+              <input required class="program__field form__field form__field--input program__input-email" id="program-email" type="email" placeholder="kuklachev@gmail.com" name="program-email">
               <svg width="40" height="40"><use xlink:href="img/sprite.svg#icon-mail"></use></svg>
             </p>
             <p class="form__wrapper-field program__form-wrapper-field">
               <label class="form__label" for="program-tel">Телефон:*</label>
-              <input required class="program__field form__field form__field--input program__input-tel" id="program-tel" type="tel" value="8 (960) 900-60-90" name="program-tel">
+              <input required class="program__field form__field form__field--input program__input-tel" id="program-tel" type="tel" placeholder="8 (960) 900-60-90" name="program-tel">
               <svg width="40" height="40"><use xlink:href="img/sprite.svg#icon-phone"></use></svg>
             </p>
           </div>
@@ -92,7 +94,7 @@
           </div>
 
           <fieldset class="form__wrapper-data program__form-wrapper-data program__form-wrapper-data--comments">
-            <textarea class="form__textarea program__form-comment" name="program-comment">Расскажите обо всех повадках кота</textarea>
+            <textarea placeholder="Расскажите обо всех повадках кота" class="form__textarea program__form-comment" name="program-comment"></textarea>
           </fieldset>
 
           <div class="program__wrapper-title program__wrapper-title--additional">
